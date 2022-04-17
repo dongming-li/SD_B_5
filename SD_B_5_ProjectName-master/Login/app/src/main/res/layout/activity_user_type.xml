@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        tools:context="com.example.leon.login.UserType">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="User Management"
+            app:titleTextColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1F2D44"
+            android:elevation="4dp">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/info"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                app:materialIcon="information"
+                app:materialIconColor="@color/colorPrimary"
+                app:materialIconSize="25dp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:backgroundTint="#1a09d6"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorAccent"
+            android:max="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/location_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonEmployee"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate Employee" />
+
+            <Button
+                android:id="@+id/buttonStoreManager"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate Store Manager" />
+
+            <Button
+                android:id="@+id/buttonWarehouseManager"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate Warehouse Manager" />
+
+            <Button
+                android:id="@+id/buttonAdmin"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate Admin" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

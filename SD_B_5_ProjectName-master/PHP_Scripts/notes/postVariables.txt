@@ -1,0 +1,219 @@
+LIST OF ALL PHP SCRIPTS I/O
+
+* Anytime you see the "<>" brackets,
+* this resembles the variable inside
+
+add.php -----------------------------------------------
+
+	(REQUIRED)
+	company_id
+	upc
+	quantity
+
+	(OPTIONAL - IF NEW ITEM)
+	name
+	description
+	bin_id
+	manufacturer_price
+	msrp
+	location_id
+
+	(RETURNS)
+	All info about item added, example:
+	UPC:123-PRODUCT_NAME:Jesus Juice-QUANTITY... (ETC)
+
+add_directory.php -------------------------------------
+
+	(REQUIRED)
+	company_id
+	last_name
+	first_name
+	location_id
+	user_type
+	email
+	phone_number
+	address
+	state
+	city
+	zip_code	
+
+	(OPTIONAL)
+	user_id
+
+	(RETURNS)
+	user_id
+
+
+add_order.php ------------------------------------------
+
+	(REQUIRED)
+	company_id
+	item_list
+	location_id
+	destination_id
+	expected_delivery_date	
+
+	(OPTIONAL)
+	order_id	
+
+	(RETURNS)
+	Nothing as of now, once it is working I will return the order_id
+
+add_user_type.php --------------------------------------
+
+	(REQUIRED)
+	email_address
+	encryption_code	
+
+	(OPTIONAL)
+	N/A	
+
+	(RETURNS)
+	"Successfully added the following information to the USER_TYPE table. EMAIL_ADDRESS: <email> | ENCRYPTION_CODE: <code>
+
+delete_company.php -------------------------------------
+
+	(REQUIRED)
+	company_id
+
+	(OPTIONAL)
+	N/A
+
+	(RETURNS)
+	"Company <company_id> has been deleted."
+	
+password.php -------------------------------------------
+
+	(REQUIRED)
+	N/A
+	
+	(OPTIONAL)
+	N/A
+	
+	(RETURNS)
+	Returns all from password table
+
+register_company.php -----------------------------------
+
+	(REQUIRED)
+	company_name
+	state
+	city
+	street_address
+	zip_code
+	phone
+	email	
+	lat
+	long
+
+	(OPTIONAL)
+	N/A
+
+	(RETURNS)
+	company_id
+
+remove_directory.php -----------------------------------
+
+	(REQUIRED)
+	company_id
+	user_id
+
+	(OPTIONAL)
+	N/A
+
+	(RETURNS)
+	"User <user_id> was successfully removed from the user<company_id> table."
+
+remove.php ---------------------------------------------
+
+	(REQUIRED)
+	company_id
+	upc
+	delete
+
+	(OPTIONAL)
+	quantity - if <delete> is 2
+
+	(RETURNS)
+	All info about item, example:
+	UPC:123-PRODUCT_NAME:Jesus Juice-QUANTITY... (ETC)
+
+search.php ---------------------------------------------
+
+	(REQUIRED)
+	company_id
+	upc OR name
+	
+	(OPTIONAL)
+	N/A
+	
+	(RETURNS)
+	All info about item, example:
+	UPC:123-PRODUCT_NAME:Jesus Juice-QUANTITY... (ETC)
+
+search_directory.php -----------------------------------
+
+	(REQUIRED)
+	company_id
+	*******The following variables are an OR list in descending order
+	user_id
+	last_name
+	first_name
+	lcoation_id
+
+	(OPTIONAL)
+	N/A
+	
+	(RETURNS)
+	All info about user(s), example:
+	USER_ID:<user_id>-LOCATION_ID:<location_id>... (ETC)
+
+search_user_type.php -----------------------------------
+
+	(REQUIRED)
+	email_address
+	
+	(OPTIONAL)
+	N/A
+	
+	(RETURNS)
+	<encryption_code>
+
+update_directory.php -----------------------------------
+	
+	(REQUIRED)
+	company_id
+	user_id
+	
+	(OPTIONAL)
+	location_id
+	user_type
+	first_name
+	last_name
+	email
+	phone_number
+	address
+	city
+	state
+	zip_code
+
+update.php ---------------------------------------------
+
+	(REQUIRED)
+	company_id
+	upc
+	quantity
+
+	(OPTIONAL)
+	N/A
+	
+	(RETURNS)
+	All info about item, example:
+	UPC:123-PRODUCT_NAME:Jesus Juice-QUANTITY... (ETC)
+
+SERVER INFORMATION *********************************************************
+
+SERVER: mysql.cs.iastate.edu
+USERNAME: dbu309sdb5
+PASSWORD: cazAqXCV
+SCHEMA: db309sdb5

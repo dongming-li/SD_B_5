@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leon.login.ActivityUsers">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1F2D44"
+        android:elevation="4dp"
+        app:title="Messages"
+        app:titleTextColor="@color/colorPrimary">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/info"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            app:materialIcon="information"
+            app:materialIconColor="@color/colorPrimary"
+            app:materialIconSize="25dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.leon.login.ActivityChat"
+
+    android:backgroundTint="@color/messagebackground"
+
+
+    android:layout_marginTop="50dp"
+
+    >
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.64"-->
+    <!--android:gravity="center"-->
+
+    <!--android:text="Conversation"-->
+    <!--android:textColor="@android:color/darker_gray"-->
+    <!--android:textSize="22sp"-->
+
+    <!--/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="7.31"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:paddingBottom="60dp"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layout1">
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/activity_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="5dp"/>
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/largeImage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:contentDescription="" />-->
+
+
+
+</LinearLayout>
+
+    </RelativeLayout>

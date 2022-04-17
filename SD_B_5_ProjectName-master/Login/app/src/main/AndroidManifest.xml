@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leon.login">
+    //Allow internet access
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OperationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DirectoryAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddQuantityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DirectoryUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderRequestAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyRegistration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserType"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ArchiveProduct"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SearchDirectoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SearchOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CompletedOrder"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivityUsers"
+            android:label="User List"/>
+
+        <activity android:name=".ActivityChat"
+            android:label="Messages"/>
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".StoreActivity"
+            android:label="@string/title_activity_store" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".TestAddressConvert" />
+        <activity android:name=".StoreAdd" />
+        <activity android:name=".StoreUpdate" />
+        <activity android:name=".WarehouseAdd" />
+        <activity android:name=".WarehouseUpdate" />
+        <activity android:name=".StoreRemove" />
+        <activity android:name=".WarehouseRemove"></activity>
+    </application>
+
+</manifest>

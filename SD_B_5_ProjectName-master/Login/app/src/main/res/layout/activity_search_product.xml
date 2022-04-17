@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leon.login.SearchProductActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1F2D44"
+        android:elevation="4dp"
+        app:title="Search Item"
+        app:titleTextColor="@color/colorPrimary">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/info"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            app:materialIcon="information"
+            app:materialIconColor="@color/colorPrimary"
+            app:materialIconSize="25dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal"
+            android:text="Search Product" />
+
+        <EditText
+            android:id="@+id/editTextUPCName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="Enter UPC, Name or Location ID"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonSearchUpc"
+            android:layout_width="200dp"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Search by UPC" />
+
+        <Button
+            android:id="@+id/buttonSearchName"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Search by Name" />
+
+        <Button
+            android:id="@+id/buttonSearchLocation"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Search by Location ID" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:layout_gravity="center_horizontal"
+             android:text="OR" />
+
+        <Button
+            android:id="@+id/buttonSearchScanner"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Scan UPC" />
+
+        <Button
+            android:id="@+id/buttonArchive"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Show Archived Product" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

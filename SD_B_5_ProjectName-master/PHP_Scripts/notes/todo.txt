@@ -1,0 +1,12 @@
+To Do:
+
+- Create Table
+	Name: email_lookup
+	Columns: email, company_id, location_id, user_type
+
+- Update Tables
+	Name: user
+	Columns: latitude, longitude
+
+	
+

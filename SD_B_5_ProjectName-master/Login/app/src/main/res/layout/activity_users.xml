@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leon.login.ActivityUsers">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1F2D44"
+        android:elevation="4dp"
+        app:title="User List"
+        app:titleTextColor="@color/colorPrimary">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/info"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            app:materialIcon="information"
+            app:materialIconColor="@color/colorPrimary"
+            app:materialIconSize="25dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <LinearLayout
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="80dp"
+    android:layout_centerHorizontal="true"
+
+    >
+
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+            <!--tools:context="com.example.leon.login.ActivityUsers"-->
+            <!--android:orientation="vertical"-->
+
+            <!--android:background="@android:color/holo_orange_dark"-->
+            <!--android:weightSum="1"-->
+
+
+            <!--android:layout_marginTop="30dp"-->
+
+
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:layout_centerHorizontal="true" -->
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Select a user to start the chat"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <ListView
+                android:id="@+id/usersList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+    </RelativeLayout>

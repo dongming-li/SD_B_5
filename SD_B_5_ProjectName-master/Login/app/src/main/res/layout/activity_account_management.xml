@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        tools:context="com.example.leon.login.AccountManagement">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Company Management"
+            app:titleTextColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1F2D44"
+            android:elevation="4dp">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/info"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                app:materialIcon="information"
+                app:materialIconColor="@color/colorPrimary"
+                app:materialIconSize="25dp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="97dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/buttonUserTypeGenerate"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate User Type" />
+
+            <Button
+                android:id="@+id/buttonStoreGenerate"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Generate Store" />
+
+            <Button
+                android:id="@+id/buttonRemoveUser"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Remove User" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
